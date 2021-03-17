@@ -2,15 +2,15 @@
 
 namespace ALF\LiqPay\Facades;
 
-use ALF\LiqPay\LiqPay;
+use ALF\LiqPay\LiqPay as LiqPayClient;
 
-class Facade extends \Illuminate\Support\Facades\Facade
+class LiqPay extends \Illuminate\Support\Facades\Facade
 {
     /**
      * {@inheritDoc}
      */
     protected static function getFacadeAccessor()
     {
-        return LiqPay::class;
+        return LiqPayClient::class;
     }
 }
