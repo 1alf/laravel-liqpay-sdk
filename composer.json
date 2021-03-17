@@ -1,0 +1,39 @@
+{
+    "name": "1alf/laravel-liqpay-sdk",
+    "description": "Liqpay SDK for Laravel",
+    "type": "library",
+    "license": "MIT",
+    "version": "1.0.0",
+    "homepage": "https://github.com/1alf/laravel-liqpay-sdk",
+    "authors": [
+        {
+            "name": "Hennadii Alforov",
+            "email": "admin@gaalferov.com"
+        }
+    ],
+    "keywords": [
+        "liqpay",
+        "laravel"
+    ],
+    "autoload": {
+        "psr-4": {
+            "ALF\\LiqPay\\" : "src/"
+        }
+    },
+    "minimum-stability": "stable",
+    "require": {
+        "php": ">=5.6.0",
+        "guzzlehttp/guzzle": "^6.5.5",
+        "ext-json": "*"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "ALF\\LiqPay\\LiqPayServiceProvider"
+            ],
+            "aliases": {
+                "LiqPay": "ALF\\LiqPay\\Facades\\LiqPay"
+            }
+        }
+    }
+}
