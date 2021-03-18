@@ -1,6 +1,13 @@
 # laravel-liqpay-sdk
 Liqpay SDK for Laravel
 
+#Install
+```
+composer require 1alf/laravel-liqpay-sdk:dev-master
+
+php artisan vendor:publish --provider="ALF\LiqPay\LiqPayServiceProvider"
+```
+
 # Using
 You can use Laravel resolving and add LiqPay inside constructor
 ```php
