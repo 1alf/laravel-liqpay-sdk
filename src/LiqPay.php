@@ -24,10 +24,16 @@ class LiqPay
      */
     private $privateKey;
 
-    public function __construct(string $publicKey, string $privateKey)
+    /**
+     * LiqPay constructor.
+     *
+     * @param string $publicKey
+     * @param string $privateKey
+     */
+    public function __construct(string $publicKey = '', string $privateKey = '')
     {
-        $this->publicKey = $publicKey;
-        $this->privateKey = $privateKey;
+        $this->publicKey = $publicKey ?: config('liqpay.public_key');
+        $this->privateKey = $privateKey ?: config('liqpay.private_key');
     }
 
     /**
