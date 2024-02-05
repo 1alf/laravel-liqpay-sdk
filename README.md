@@ -3,7 +3,7 @@ Liqpay SDK for Laravel
 
 #Install
 ```
-composer require 1alf/laravel-liqpay-sdk:dev-master
+composer require 1alf/laravel-liqpay-sdk
 
 php artisan vendor:publish --provider="ALF\LiqPay\LiqPayServiceProvider"
 ```
